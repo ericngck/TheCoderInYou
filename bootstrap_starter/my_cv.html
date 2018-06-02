@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Walkthrough</title>
 
     <!-- default bootstrap -->
@@ -18,18 +19,191 @@
     
     <!-- animate.css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
-    
+    <link rel="stylesheet" href="custom.css">
+
     <!-- use this style for testing and development purposes -->
-    <!-- <style type="text/css">
+    <!--- <style type="text/css">
     .container{border: 2px dotted green;}
-    .row{border: 1px dotted red;}
+    .row{
+        border: 1px dotted red;
+    }
     .row [class*=' col-']{border: 2px dotted purple;}
     </style> -->
     
 </head>
 <body>
 
+    <div class="container">
 
+        <!--- row 1 -->
+        <div class="row">
+                <div class="col-md-12">
+                        <div class="jumbotron">
+                                <h1>Eat, Code, Sleep, Repeat</h1>
+                                <p>Eric Ng</p>
+                                <p><a class="btn btn-primary" href="http://google.com" role="button">Learn more</a></p>
+                              </div>
+                </div>
+        </div>
+       
+        <!--- row 2 -->
+        <div class="row">
+                <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="https://vignette.wikia.nocookie.net/undertale-rho/images/5/5f/Placeholder.jpg/revision/latest?cb=20180213155916" alt="">
+                            <div class="caption">
+                                <h3>Portfolio 1</h3>
+                                <p>Portfolio one description</p>
+                                <a class="btn btn-primary" href="http:google.com">view more</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="thumbnail">
+                                <img src="https://vignette.wikia.nocookie.net/undertale-rho/images/5/5f/Placeholder.jpg/revision/latest?cb=20180213155916" alt="">
+                                <div class="caption">
+                                    <h3>Portfolio 2</h3>
+                                    <p>Portfolio two description</p>
+                                    <a class="btn btn-primary" href="http:google.com">view more</a>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="thumbnail">
+                                <img src="https://vignette.wikia.nocookie.net/undertale-rho/images/5/5f/Placeholder.jpg/revision/latest?cb=20180213155916" alt="">
+                                <div class="caption">
+                                    <h3>Portfolio 3</h3>
+                                    <p>Portfolio three description</p>
+                                    <a class="btn btn-primary" href="http:google.com">view more</a>
+                                </div>
+                            </div>
+                    </div>
+        </div>
+
+        <!--- row 3 -->
+        <div class="row">
+                <div class="col-md-12">
+                        <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x7rE3W8J8oY"></iframe>
+                        </div>
+                </div>
+        </div>
+        
+        <!--- row 4 -->
+        <div class="row">
+                <div class="col-md-6">
+                    <h2>
+                        Talk to me
+                    </h2>
+                        <form>
+                                <div class="form-group">
+                                  <label for="my-name">Name</label>
+                                  <input type="text" class="form-control" id="my-name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="my-email">Email</label>
+                                  <input type="email" class="form-control" id="my-email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <div class="radio">
+                                            <label>
+                                              <input type="radio" name="radio1" id="my-radio1"> I want to receive newsletter
+                                            </label>
+                                    </div>
+                                    <div class="radio">
+                                            <label>
+                                              <input type="radio" name="radio2" id="my-radio2"> I agree to terms and conditions
+                                            </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-default">Drop me an email</button>
+                        </form>
+                </div>
+                <div class="col-md-6 text-center">
+                        <h2>
+                            About me
+                        </h2>
+                        <p>
+                            BBBJKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+                        </p>
+                </div>
+        </div>
+
+        <!--- row 5 -->
+        <div class="row">
+                <div class="col-md-4 text-center">
+                        <h2>Working hours</h2>
+                        <table class="table text-left">
+                            <tr>
+                                <th>
+                                    Day
+                                </th>
+                                <th>
+                                    Hours
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Monday
+                                </td>
+                                <td>
+                                    9-6pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tuesday
+                                </td>
+                                <td>
+                                    11-3am
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Weekend
+                                </td>
+                                <td>
+                                    Closed
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+                <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7945094339143!2d103.78528081415918!3d1.2980165621028132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a4fe45692e5%3A0xc90d9ee9e29fd8c2!2s79+Ayer+Rajah+Crescent%2C+Block+79%2C+Singapore+139955!5e0!3m2!1sen!2ssg!4v1527912801522"></iframe>
+                        </div>
+                </div>
+                <div class="col-md-4 text-center">
+                        <h2>Find me</h2>
+                        <div class="list-group text-left">
+                            <a href="tel:6596951181" class="list-group-item">
+                            <i class="fa fa-phone-square fa-2x"></i> +65 96951181                     
+                            </a>
+                            <a href="mailto:ericng1181@gmail.com" class="list-group-item">
+                                <i class="fa fa-envelope-square fa-2x"></i> ericng1181@gmail.com                   
+                            </a>
+                        </div>
+                       
+                </div>
+        </div>
+
+        <!--- row 6 -->
+        <div class="row">
+                <div class="col-md-12 text-center">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                <a href="http://www.google.com" target="_blank"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                                <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+                                <a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube-square fa-3x"></i></a>
+                                <a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+                            </li>
+                        </ul>
+                </div>
+        </div>
+
+
+    </div>
 
 
 </body>
