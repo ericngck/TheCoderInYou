@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Javascript 02</title>
+
+    <script language="javascript" type="text/javascript">
+        var myObject;
+        // arrays of objects
+        myObject = [
+            {
+                "id": 1,
+                "name": "Steven",
+                "dob": "01-Jan-1977",
+                "cars": ["Civic", "Evoluation", "Subaru"] // arrays of strings
+            },
+            {
+                "id": 2,
+                "name": "Eddie",
+                "dob": "18-Dec-1987",
+                "cars": ["BMW", "Mercedes", "Volkswagen"]
+            },
+            {
+                "id": 3,
+                "name": "Mary",
+                "dob": "26-Apr-1995",
+                "cars": ["Toyota", "Suzuki", "Porsche", "Mazda"]
+            }];
+
+        var linebreak = "<br>";
+
+        function printData(count) {
+            var name = myObject[count].name;
+            var dob = myObject[count].dob;
+            var car = "";
+            var carlen = myObject[count].cars.length;
+
+            for (var i = 0; i < carlen; i++) {
+                car += myObject[count].cars[i] + linebreak; //car = car + myObject[count].cars[i]
+            }
+
+            document.getElementById("demo").innerHTML += name + linebreak + dob + linebreak + car + linebreak;
+            // above line can also be achive by writing below
+            // var x = document.getElementById("demo").innerHTML
+            // document.getElementById("demo").innerHTML = x + name + linebreak + dob + linebreak + car + linebreak;
+        }
+
+        function whileLoopData() {
+            var counter = 0;
+            while (counter < myObject.length) {
+                printData(counter);
+                counter++;
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="button" value="Print Data" onclick="whileLoopData()">
+
+    <p id="demo">
+
+    </p>
+
+
+</body>
+
+</html>
